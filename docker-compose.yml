@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: web
+    build:
+      context: ./django_app
+      dockerfile: Dockerfile.dev
+    command: gunicorn core.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - static_volume:/home/django_app/web/static_django
+    expose:
+      - "8000"
+    env_file:
+      - ./.env.dev
+    depends_on:
+      - db
+
+  db:
+    container_name: db
+    image: postgres:13.0-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - ./.env.dev.db
+  
+  streamlit:
+    container_name: streamlit_app
+    restart: always
+    expose:
+      - "8501"
+    build: ./streamlit_app
+    command: streamlit run app_6.py
+
+  nginx:
+    container_name: nginx
+    restart: always
+    image: nginx:1.15-alpine
+    ports:
+      - "8000:80"
+    volumes:
+      - static_volume:/home/django_app/web/static_django
+      - ./data/nginx:/etc/nginx/conf.d
+    depends_on:
+      - web
+
+volumes:
+  postgres_data:
+  static_volume:
+
