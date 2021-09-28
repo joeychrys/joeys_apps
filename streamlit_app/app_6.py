@@ -54,7 +54,7 @@ st.sidebar.success('All charts are interactive!')
 
 st.sidebar.write(
     """
-    [![See the code](https://img.shields.io/badge/See%20the%20code--blue.svg?logo=github&logoColor=blue&style=social)](https://github.com/joeychrys/Technical_Analyisis)
+    [![See the code](https://img.shields.io/badge/See%20the%20code--blue.svg?logo=github&logoColor=blue&style=social)](https://github.com/joeychrys/joeys_apps/blob/main/streamlit_app/app_6.py)
     """
 )
 
