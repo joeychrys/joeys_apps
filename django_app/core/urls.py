@@ -20,7 +20,7 @@ from portfolio.views import base_view_portfolio
 
 urlpatterns = [
     path('django/', base_view_portfolio),
-   # path('minecraft/', home_view_minecraft),
-   # path('minecraft/news/', news_view_minecraft),
+    # path('minecraft/', home_view_minecraft),
+    # path('minecraft/news/', news_view_minecraft),
     path('django/admin/', admin.site.urls),
 ]
