@@ -1,2 +1,5 @@
 # ignore venv
 venv
+
+# ignore sqlite db
+django_app/db.sqlite3
