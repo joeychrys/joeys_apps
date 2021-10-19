@@ -16,11 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from portfolio.views import base_view_portfolio
-from minecraft.views import home_view_minecraft, news_view_minecraft
 
 urlpatterns = [
     path('django/', base_view_portfolio),
-    path('minecraft/', home_view_minecraft),
-    path('minecraft/news/', news_view_minecraft),
-    path('minecraft/admin/', admin.site.urls),
+    path('django/admin/', admin.site.urls),
 ]
