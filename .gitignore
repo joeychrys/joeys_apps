@@ -1,2 +1,7 @@
 # ignore sqlite db
 django_app/db.sqlite3
+
+# ignore __pycache__
+django_app/core/__pycache__
+django_app/minecraft/__pycache__
+django_app/portfolio/__pycache__
