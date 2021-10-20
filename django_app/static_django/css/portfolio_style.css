@@ -1,7 +1,9 @@
 .html{
     scroll-behavior: smooth !important;
 }
-
 body {
-    margin-top: 15px !important;
+    margin-top: 20px !important;
+}
+section.home{
+    padding-top: 40px !important;
 }
