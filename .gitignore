@@ -5,3 +5,6 @@ django_app/db.sqlite3
 django_app/core/__pycache__
 django_app/minecraft/__pycache__
 django_app/portfolio/__pycache__
+
+# ignore DS_Store
+django_app/.DS_Store
