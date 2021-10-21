@@ -12,7 +12,6 @@ sr.reveal('.home-text',{
 sr.reveal('.btn-work',{
     duration: 2000,
     origin: "left",
-    delay: 200,
     distance: "100px"
 });
 sr.reveal('.student-card',{
@@ -32,4 +31,10 @@ sr.reveal('.music-card',{
     origin: "right",
     distance: "100px",
     viewFactor: 0.2
+});
+sr.reveal('.success-alert',{
+    duration: 1000,
+    delay: 100,
+    origin: "left",
+    distance: "200px",
 });
