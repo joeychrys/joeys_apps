@@ -8,3 +8,4 @@ django_app/portfolio/__pycache__
 
 # ignore DS_Store
 django_app/.DS_Store
+.DS_Store
