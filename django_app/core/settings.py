@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # my apps
     "portfolio",
     # "minecraft",
+    "shop",
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates", "templates/portfolio", "templates/minecraft"],
+        'DIRS': [BASE_DIR / "templates", "templates/portfolio", "templates/minecraft", "templates/shop"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
