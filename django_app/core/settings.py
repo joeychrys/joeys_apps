@@ -37,10 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'rest_framework',
+    
     # my apps
     "portfolio",
-    # "minecraft",
     "shop",
 ]
 
@@ -59,7 +59,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates", "templates/portfolio", "templates/minecraft", "templates/shop"],
+        'DIRS': ["templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,9 +128,7 @@ USE_TZ = True
 
 STATIC_URL = 'static_django/'
 
-STATICFILES_DIRS = [
-    BASE_DIR / 'static_django', 'static_django/admin',
-]
+STATICFILES_DIRS = ['static_django']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

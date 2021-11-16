@@ -21,9 +21,11 @@ services:
     image: postgres:13.0-alpine
     volumes:
       - postgres_data:/var/lib/postgresql/data/
+    expose:
+      - "5432"
     env_file:
       - ./.env.dev.db
-  
+
   streamlit:
     container_name: streamlit_app
     restart: always
