@@ -1,2 +1,2 @@
 # joeysapps.com
-Docker + Nginx + Streamlit + Django + Postgres = coooolllll
+Full documentation comming soon
