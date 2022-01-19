@@ -1,5 +1,5 @@
-pandas==1.3.2
-streamlit==0.89.0
-ta==0.7.0
-yfinance==0.1.63
-watchdog==2.1.5
+pandas==1.3.5
+streamlit==1.4.0
+ta==0.9.0
+yfinance==0.1.69
+watchdog==2.1.6
